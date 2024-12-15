@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráfico de Barras - Torcidas</title>
+  <style>
+    h3{
+        left: 45%;
+      position: absolute;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .chart {
+      display: flex;
+      align-items: flex-end;
+      height: 300px;
+      width: 100%;
+      border-left: 2px solid black;
+      border-bottom: 2px solid black;
+      margin: 20px 0;
+    }
+    .chart .bar {
+      flex: 1;
+      margin: 0 5px;
+      text-align: center;
+      position: relative;
+    }
+    .chart .bar span {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: #3498db;
+      position: absolute;
+      bottom: 0;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .label {
+      text-align: center;
+      flex: 1;
+      padding: 0 10px; /* Adiciona espaçamento entre os nomes */
+    }
+  </style>
+</head>
+<body>
+    <h3>Total de pessoas : 10</h3>
+  <h1>Gráfico de Barras - Torcidas</h1>
+
+  <div class="chart">
+    <div class="bar" style="height: 0.0%">
+      <span>0.0%</span>
+    </div>
+    <div class="bar" style="height: 0.0%">
+      <span>0.0%</span>
+    </div>
+    <div class="bar" style="height: 0.0%">
+      <span>0.0%</span>
+    </div>
+    <div class="bar" style="height: 0.0%">
+      <span>0.0%</span>
+    </div>
+    <div class="bar" style="height: 50.0%">
+      <span>50.0%</span>
+    </div>
+    <div class="bar" style="height: 0.0%">
+      <span>0.0%</span>
+    </div>
+    <div class="bar" style="height: 0.0%">
+      <span>0.0%</span>
+    </div>
+    <div class="bar" style="height: 50.0%">
+      <span>50.0%</span>
+    </div>
+  </div>
+
+  <div class="labels">
+    <div class="label">Flamengo</div>
+    <div class="label">Palmeiras</div>
+    <div class="label">Corinthians</div>
+    <div class="label">São Paulo</div>
+    <div class="label">Sport</div>
+    <div class="label">Santa Cruz</div>
+    <div class="label">Náutico</div>
+    <div class="label">Outros</div>
+  </div>
+</body>
+</html>
