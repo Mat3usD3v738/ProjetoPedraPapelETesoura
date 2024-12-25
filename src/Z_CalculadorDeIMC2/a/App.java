@@ -353,20 +353,24 @@ _________________________________________________*/
 
     private static void EscreverORelatorio(float imc, String Mc, String Mgo, String Mrd, String Md) {
         File file = new File("/home/mateus/Área de Trabalho/Relatorio.txt");
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file,true))) {
+            bw.newLine();
             bw.write("____________________relatorio____________________");
-            bw.write("\n");
+           bw.newLine();
             bw.write("seu IMC é : " + imc);
-            bw.write("\n");
+           bw.newLine();
             bw.write("Classificação : " + Mc);
-            bw.write("\n");
+           bw.newLine();
             bw.write("Grau de obesidade : " + Mgo);
-            bw.write("\n");
+           bw.newLine();
             bw.write("Risco de doenças : " + Mrd);
-            bw.write("\n");
+           bw.newLine();
             bw.write(Md);
-            bw.write("\n");
+           bw.newLine();
             bw.write("_________________________________________________");
+            bw.newLine();
+            bw.flush();
+
         } catch (IOException e) {
             e.printStackTrace();
 
